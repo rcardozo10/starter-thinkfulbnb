@@ -72,12 +72,14 @@ header {
   color: #fff;
 }
 
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
 header nav ul {
-  max-width: 400px;
-  margin: 0 auto;
-  padding: 20px 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 header nav ul li {
@@ -100,13 +102,16 @@ header nav ul li a:hover {
 form {
   border: 2px solid #ff385c;
   padding: 10px;
+  display: flex;
+  justify-content: space-between;
 }
-form div {
+
+/* form div {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0;
-}
+}*/
 
 form label {
   font-weight: bold;
@@ -125,6 +130,16 @@ form button {
   font-size: 24px;
   padding: 15px;
   width: 100%;
+}
+
+form .group {
+  justify-content: center;
+  width: 100%;
+}
+
+form .item {
+  display: flex;
+  justify-content: space-between;
 }
 
 /* -------  Footer ------- */
@@ -146,49 +161,70 @@ footer p {
     flex-direction: row;
     justify-content: space-between;
     padding: 10px 30px;
-    width: 100%;
   }
 
- /* header h1 {
-    
-    margin: 14px 0;
-    padding-top: 6px;
-  }*/
+  header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+  }  
 
-  .logo {
-    font-size: 3rem;
-  }
-
-  section {
-    width: 100%;
-  }
-
-.item {
-  flex: 1;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 10px;
-}
-
-.group {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-}
-
-.paragraph {
-  flex: 2;
-}
-  }
-
- /* @media all and (min-width: 800px) {
-    section {
-      padding: 0 10%;
+  form {
+        border: 2px solid #ff385c;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
     }
-  
+
+    form button {
+        background-color: #ff385c;
+        border: none;
+        color: #fff;
+        font-size: 15px;
+        padding: 15px 15px;
+        width: 100%;
+    }
+
+    form select,
+    form input {
+        width: 100%;
+    }
+
     .group {
-      display: flex;
-      flex-direction: row;
-    }}
-    */
-  
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .item {
+        flex: 1;
+        margin: 10px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .item-double {
+        flex: 2;
+    }
+
+    .logo {
+        font-size: 45px;
+    }
+
+    form .item {
+        width: 15%;
+    }
+
+    .row {
+        flex: 1;
+    }
+
+    .column {
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+    }
+}
