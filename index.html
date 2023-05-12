@@ -36,45 +36,55 @@
       <section id="Stay">
         <h2>Find the perfect vacation rental</h2>
         <!-- Create a form here -->
-        <form>
+      
          
             <!-- <legend>Shipping Information</legend> -->
-            <div>
-              <label for="name">Location</label>
-              <input
-                id="name"
-                type="text"
-                name="name"
-                placeholder="Search Destination"
-              />
+            <form>
+              <div class="group">
+                  <div class="item">
+                      <label for="location">Location</label>
+                      <input
+                          id="location"
+                          type="text"
+                          name="name"
+                          placeholder="Search destination"
+                          required
+                      />
+                  </div>
+                  <div class="item">
+                      <label for="arrive">Arrive</label>
+                      <input
+                          id="arrive"
+                          type="date"
+                          name="name"
+                          required
+                      />
+                  </div>
+                  <div class="item">
+                      <label for="depart">Depart</label>
+                      <input
+                          id="depart"
+                          type="date"
+                          name="name"
+                          required
+                      />
+                  </div>
+                  <div class="item">
+                    <label for="type">Type</label>
+                    <select name="type" id="type" size="1">
+                        <option value="apartment">Apartment</option>
+                        <option value="barn">Barn</option>
+                        <option value="castle">Castle</option>
+                        <option value="houseboat">Houseboat</option>
+                        <option value="tiny House">Tiny House</option>
+                        <option value="yacht">Yacht</option>
+                        <option value="yurt">Yurt</option>
+                    </select>
+                </div>
+                <div class="item">
+                <button type="submit">Search</button>
             </div>
-           
-          <div>
-            <label for="start">Depart</label>
-
-<input type="date" id="start" name="trip-start">
-      </div>
-
-            <div>
-            <label for="start">Arrive</label>
-<input type="date" id="start" name="trip-start">
-      </div>
-
-            <div>
-              <label for="type">Type</label>
-              <select name="type" id="type" size="1">
-                <option value="Apartment">Apartment</option>
-                <option value="Barn">Barn</option>
-                <option value="Castle">Castle</option>
-                <option value="Houseboat">Houseboat</option>
-                <option value="Tiny House">Tiny House</option>
-                <option value="Yacht">Yacht</option>
-                <option value="Yurt">Yurt</option>
-              </select>
-            </div>
-              <button type="submit">Search</button>
-            </div>
-          
+          </div>
         </form>
       </section>
 
@@ -111,9 +121,9 @@
 
       <!-- Ideas -->
       <section id="Ideas">
-        <div class="group">
+        
         <h2>Ideas</h2>
-
+        <div class="group">
      <div class="item">
         <h3>Forest retreats</h3>
         <img
